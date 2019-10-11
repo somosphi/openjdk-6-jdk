@@ -6,7 +6,7 @@ ENV JAVA_HOME="/usr/lib/jvm/java-1.6.0-openjdk-amd64"
 
 RUN \
   apt-get update && \
-  apt-get install -y openjdk-6-jdk cron sed ksh && \
+  apt-get install -y openjdk-6-jdk rsyslog sed ksh && \
   rm -rf /var/lib/apt/lists/*
 
 CMD bash
